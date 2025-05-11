@@ -116,6 +116,94 @@
     <div class="total" id="total-price">Tổng cộng: 0 ₫</div>
     <button class="checkout-btn">Thanh toán</button>
 </main>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>THÔNG TIN CHUNG</h3>
+                <p><span class="highlight">NHN Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sĩ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
+                <p><span class="highlight">Với sứ mệnh:</span> <span class="italic italic-custom">"NHN cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</span></p>
+                <p><span class="highlight">Tầm nhìn:</span> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+            </div>
+
+            <div class="footer-col">
+                <h3>THÔNG TIN LIÊN HỆ</h3>
+                <p><span>Hệ thống cửa hàng:</span> <span class="highlight">1 Super Center, 5 shop Premium và 68 cửa hàng trên toàn quốc</span></p>
+                <p><span class="highlight hoverable">Xem tất cả các cửa hàng NHN</span></p>
+                <p><span>Hotline:</span> <span class="highlight">0977508430 | 0338003008</span></p>
+                <p><span>Email:</span> <span class="highlight">info@shopNHN.com</span></p>
+
+                <p><span>Hotline bán sĩ:</span> <span class="highlight">068595959</span></p>
+
+                <div class="social-icons">
+                    <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>CHÍNH SÁCH</h3>
+                <ul>
+                    <li>Thông tin về chuyển và giao nhận</li>
+                    <li>Chính sách đổi trả,hoàn tiền</li>
+                    <li>Chính sách bảo hành</li>
+                    <li>Chính sách xử lý khiếu nại</li>
+                    <li>Chính sách vận chuyển</li>
+                    <li>Điều khoản sử dụng</li>
+                    <li>Chính Sách Bảo Mật Thông Tin</li>
+                    <li>Chính sách nhượng quyền</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>HƯỚNG DẪN</h3>
+                <ul>
+                    <li>Danh sách số tài khoản chính thức của các shop trong hệ thống NHN Sports</li>
+                    <li>Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</li>
+                    <li>Hướng dẫn thanh toán</li>
+                    <li>Kiểm tra bảo hành</li>
+                    <li>Kiểm tra đơn hàng</li>
+                    <li>HƯỚNG DẪN MUA HÀNG</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="bold">Công ty TNHH NHN SPORTS</p>
+            <p>Địa chỉ: 390/2 Hà Huy Giáp,Phường Thanh Lộc, Quận 12, TPHCM</p>
+            <p>Email: info@shopvnb.com</p>
+            <p>GPKD số 0314496879 do Sở KH và ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
+        </div>
+        <div class="googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.770411167079!2d106.66948868012008!3d10.980694527517857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1085e2b1c37%3A0x73bfa5616464d0ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7pyBE4bqndSBN4buZdA!5e0!3m2!1svi!2s!4v1745047183589!5m2!1svi!2s" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    <script>
+        var BotStar={appId:"s0fabeb3f-ddc6-45ee-b862-2ba20b1ad61a",mode:"livechat"};
+        !function(t,a){
+            var e=function(){(e.q=e.q||[]).push(arguments)};
+            e.q=e.q||[],t.BotStarApi=e;
+            !function(){
+                var t=a.createElement("script");t.type="text/javascript",t.async=1,t.src="https://widget.botstar.com/static/js/widget.js";
+                var e=a.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)
+            }();
+        }(window,document)
+    </script>
+    <script src="chitietsanpham/js/cart.js"></script>
+    <script>
+        const addToCartButtons = document.querySelectorAll(".add-to-cart-btn");
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                const product = {
+                    id: parseInt(this.dataset.id),
+                    name: this.dataset.name,
+                    price: parseInt(this.dataset.price),
+                    image: this.dataset.image
+                };
+                addToCart(product); // Gọi hàm addToCart từ cart.js
+            });
+        });
+    </script>
 <script src="chitietsanpham/js/cart.js"></script>
 <script>
     const cartBody = document.getElementById("cart-body");
